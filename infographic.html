@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multifamily Unattended Retail | SotaMarkets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
+    <style>
+        /* Paged.js styles */
+        @media screen {
+            body {
+                background-color: #f0f4f8;
+            }
+            .pagedjs_pages {
+                width: 8.5in;
+                height: 11in;
+                margin: 2rem auto;
+                box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            }
+        }
+
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+
+        @page {
+            size: 8.5in 11in;
+            margin: 0;
+        }
+
+        /* General styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .page-container {
+            width: 100%;
+            height: 100%;
+            background: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background: #1a237e; /* Deep Indigo */
+            color: white;
+            padding: 1.25rem 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 26pt;
+            font-weight: 900;
+            letter-spacing: -1px;
+        }
+
+        .header p {
+            font-size: 13pt;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 1.5rem 2rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .stat-card {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .stat-card h2 {
+            font-size: 12pt;
+            font-weight: 700;
+            color: #1e3a8a; /* Darker Blue */
+            display: flex;
+            align-items: center;
+        }
+
+        .stat-card .icon {
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        .stat-number {
+            font-size: 44pt;
+            font-weight: 900;
+            color: #2563eb; /* Bright Blue */
+            line-height: 1.1;
+            margin-top: 0.5rem;
+        }
+
+        .stat-description {
+            font-size: 11pt;
+            color: #475569;
+            margin-top: 0.5rem;
+            flex-grow: 1;
+        }
+
+        .stat-source {
+            font-size: 8pt;
+            font-style: italic;
+            color: #64748b;
+            margin-top: 0.75rem;
+        }
+
+        .full-width-stat {
+            background-color: #eef2ff;
+            border-color: #c7d2fe;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .full-width-stat .stat-number {
+            font-size: 48pt;
+            color: #4f46e5;
+            margin-bottom: 0.5rem;
+        }
+
+        .full-width-stat h2 {
+            justify-content: center;
+            font-size: 12pt;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header class="header">
+            <h1>The Future of Resident Amenities is Here</h1>
+            <p>Unattended retail is transforming multifamily living. See the numbers behind the trend.</p>
+        </header>
+
+        <div class="content">
+            <div class="stat-card full-width-stat">
+                <h2>
+                    <span class="icon">
+                        <svg class="w-10 h-10 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </span>
+                    Boost Resident Retention
+                </h2>
+                <p class="stat-number">97%</p>
+                <p class="stat-description">Of renters would stay longer if their property offered "improved services and a modern tech experience."</p>
+                <p class="stat-source">Source: RealPage</p>
+            </div>
+            <div class="grid-container">
+                <div class="stat-card">
+                    <h2>
+                        <span class="icon">
+                            <svg class="w-8 h-8 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>
+                        </span>
+                        Serve the Work-From-Home Majority
+                    </h2>
+                    <p class="stat-number">52%</p>
+                    <p class="stat-description">Of renters work from home, creating a 24/7 on-site customer base.</p>
+                    <p class="stat-source">Source: 2024 NMHC</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2>
+                        <span class="icon">
+                            <svg class="w-8 h-8 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15M6 5.25v9.75M3 17.25h18M3 13.5h18M3 9.75h18M3 6h18M3 2.25h18M12 2.25v2.75m0 16.5v-2.75M3.75 6H20.25v7.5H3.75V6z" /></svg>
+                        </span>
+                        Deliver On-Demand Convenience
+                    </h2>
+                    <p class="stat-number">66%</p>
+                    <p class="stat-description">(2 of 3) of consumers *prefer* self-service kiosks over staffed checkouts.</p>
+                    <p class="stat-source">Source: PYMNTS.com</p>
+                </div>
+                
+                <div class="stat-card">
+                    <h2>
+                        <span class="icon">
+                            <svg class="w-8 h-8 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0l.879-.659M12 21a9.002 9.002 0 00-8.485-8.995h16.97A9.002 9.002 0 0012 21z" /></svg>
+                        </span>
+                        Drive Ancillary Revenue
+                    </h2>
+                    <p class="stat-number">$45/mo</p>
+                    <p class="stat-description">Millennial renters are willing to pay up to **$45 extra per month** for a self-pay market.</p>
+                    <p class="stat-source">Source: Evans Co.</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2>
+                        <span class="icon">
+                            <svg class="w-8 h-8 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m-6.75-14.25v14.25m-3.75-10.5v10.5m10.5-10.5v10.5m6-10.5v10.5m-3.75-6.75v6.75m-3.75-3v3m12.75-3v3m-3.75 0v3m3.75 0v3m-3.75-3v3m-3.75 0v3" /></svg>
+                        </span>
+                        Tap Into a Proven Market
+                    </h2>
+                    <p class="stat-number">$31B+</p>
+                    <p class="stat-description">The U.S. unattended retail market is a massive, established industry.</p>
+                    <p class="stat-source">Source: PYMNTS.com</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <img src="https://placehold.co/150x50" alt="Company Logo">
+        </footer>
+    </div>
+
+</body>
+</html>
